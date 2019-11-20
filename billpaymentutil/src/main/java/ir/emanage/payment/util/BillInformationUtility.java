@@ -10,4 +10,12 @@ public class BillInformationUtility {
         String amount = payId.substring(0, payId.length() - 5) + "000";
         return Long.valueOf(amount);
     }
+
+    public BillType getBillType(String billId) {
+        return BillType.valueOfByCode(billId.substring(billId.length() - 2, billId.length() - 1));
+    }
+
+    public String getSubCompanyCode(String billId) {
+        return billId.substring(billId.length() - 5, billId.length() - 2);
+    }
 }

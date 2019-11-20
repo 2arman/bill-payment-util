@@ -15,8 +15,7 @@ public enum BillType {
     MUNICIPALITY_DUE("6"),
     TAX("7"),
     POLICE("8"),
-    CUSTOM("9"),
-    OTHER("10");
+    OTHER("9");
     private final String code;
 
     BillType(String code) {
