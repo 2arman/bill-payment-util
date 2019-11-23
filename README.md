@@ -11,3 +11,5 @@ use this method for validate your billId/payId :
     BillPaymentValidator.validateBill
 If validation failed then throws BadRequestException with failed id as parameter.
 BadRequestException is a Runtime exception.
+کتابخانه ای برای اعتبار سنجی شناسه قبض /شناسه پرداخت
+و شناسه های بانکی
